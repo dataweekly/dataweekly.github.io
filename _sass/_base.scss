@@ -1,0 +1,140 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+}
+html, body {
+  font-family: Open Sans;
+  color: #222222;
+  font-size: 16px;
+  line-height: 32px;
+  background: #F5F5F5;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+::-moz-selection {
+  color: #fff;
+  background: #1ECE6D;
+}
+::selection {
+  color: #fff;
+  background: #1ECE6D;
+}
+::-webkit-input-placeholder {
+    color: #a1a1a1;
+}
+:-moz-placeholder {
+   color: #a1a1a1;
+   opacity: 1;
+}
+::-moz-placeholder {
+   color: #a1a1a1;
+   opacity: 1;
+}
+:-ms-input-placeholder {
+   color: #a1a1a1;
+}
+.cw-container {
+  max-width: 728px;
+  margin: 0 auto;
+  padding: 40px 40px 24px 40px;
+}
+.cw-logo {
+  line-height: 0;
+  text-align: center;
+  img {
+    width: 199px;
+  }
+}
+.cw-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+.cw-text-left {
+  text-align: left;
+}
+.cw-white-background {
+  border: 2px solid #E8E8E8;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 24px;
+  background: #FFF;
+}
+.cw-text-right {
+  text-align: right;
+}
+.cw-text-center {
+  text-align: center;
+}
+.cw-font-18 {
+  font-size: 18px;
+}
+.cw-block {
+  display: block;
+}
+.cw-font-24 {
+  font-size: 24px;
+}
+.cw-font-32 {
+  font-size: 32px;
+}
+.cw-bold {
+  font-weight: bold;
+}
+.cw-input-text {
+  width: 100%;
+  display: block;
+  padding: 0 16px;
+  color: #222;
+  background: #fff;
+  border: 2px solid #1ECE6D;
+  border-right: 0;
+  outline: none;
+  -webkit-border-radius: 8px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius: 8px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: text;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  line-height: 60px;
+  height: 60px;
+}
+.cw-input-button {
+  width: 100%;
+  padding: 0 16px;
+  -webkit-border-radius: 0;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius: 0;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 0;
+  background: #1ECE6D;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 60px;
+  height: 60px;
+}

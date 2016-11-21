@@ -1,0 +1,7 @@
+title: Crystal Weekly
+baseurl: ""
+
+markdown: kramdown
+
+sass:
+  style: compressed
