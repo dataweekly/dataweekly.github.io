@@ -1,7 +1,0 @@
-title: Data Weekly
-baseurl: ""
-
-markdown: kramdown
-
-sass:
-  style: compressed
