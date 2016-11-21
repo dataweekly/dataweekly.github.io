@@ -24,7 +24,7 @@ def new_post(title):
     """
 
     yaml_header = 'title: %s' % title + '\n' +\
-                  'date: %s' % datetime.now()[:-7] + '\n\n'
+                  'date: %s' % str(datetime.now())[:-7] + '\n\n'
 
     filename = title.replace(' ','_') + '.md'
     filepath = os.path.join(pagesdir, filename)
