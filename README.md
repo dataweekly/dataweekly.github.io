@@ -1,3 +1,3 @@
 #DataWeekly
 
-This site is built in Jekyll
+This site is built in flask-jekyll
