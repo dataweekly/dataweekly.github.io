@@ -18,14 +18,14 @@ pagesdir = os.path.join(basedir, 'app/pages')
 @manager.command
 def new_post(title):
     """
-    creates a new file in 'pages' directory with 
+    creates a new file in 'pages' directory with
     indicated title, formatted yaml header, and opens
     new file in sublime text editor
     """
-    
+
     yaml_header = 'title: %s' % title + '\n' +\
                   'date: %s' % datetime.now()[:-7] + '\n\n'
-    
+
     filename = title.replace(' ','_') + '.md'
     filepath = os.path.join(pagesdir, filename)
     with open(filepath, 'w') as thefile:
@@ -34,7 +34,7 @@ def new_post(title):
 
 @manager.command
 def publish(push=False, remote='origin', branch='master'):
-    """adds blog post pages in root directory to git staging, commits, 
+    """adds blog post pages in root directory to git staging, commits,
     and optionally those blog posts to github"""
     freezer.freeze()
 
@@ -52,12 +52,12 @@ def publish(push=False, remote='origin', branch='master'):
 @manager.command
 def remove(filename, push=False, remote='origin', branch='master'):
     """removes a blog post completely from the system"""
-    try: 
+    try:
         filepath = os.path.join(basedir,'app/pages/%s.md'%filename)
         os.remove(filepath)
         os.system('git add -u %s' % filepath)
     except OSError: print  '"%s.md" does not exist or has been removed' % filename
-    try: 
+    try:
         dirpath = os.path.join(basedir, filename)
         shutil.rmtree(dirpath)
         os.system('git add -u  %s' % dirpath)
