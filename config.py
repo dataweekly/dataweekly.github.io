@@ -6,7 +6,7 @@ def parent_dir(path):
         return os.path.abspath(os.path.join(path, os.pardir))
 
 class Config:
-    REPO_NAME = "goodwordalchemy.github.io"  # Used for FREEZER_BASE_URL
+    REPO_NAME = "dataweekly.github.io"  # Used for FREEZER_BASE_URL
     DEBUG = True
 
     APP_DIR = os.path.join(basedir,'app')
@@ -17,7 +17,7 @@ class Config:
     FREEZER_DESTINATION = PROJECT_ROOT
     # Since this is a repo page (not a Github user page),
     # we need to set the BASE_URL to the correct url as per GH Pages' standards
-    FREEZER_BASE_URL = "http://localhost/"
+    FREEZER_BASE_URL = "http://dataweekly.cn/"
     FREEZER_REMOVE_EXTRA_FILES = False  # IMPORTANT: If this is True, all app files
                                         # will be deleted when you run the freezer
     FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite']
