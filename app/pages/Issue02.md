@@ -1,8 +1,6 @@
 title: Issue #02
 date: 2016-11-22 10:58:58
 
-
----- 
 本周导读  
 
 Mathematicians are a step closer to understanding what makes a perfect cup of coffee. Through some complex calculations, they have shone a light on the processes governing how coffee is extracted from grains in a filter machine...
