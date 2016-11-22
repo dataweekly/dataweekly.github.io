@@ -45,6 +45,7 @@
             <input type="email" class="form-control" id="account" placeholder="Enter email" name="account">
         </div>
         <button type="submit" class="btn btn-default" id="subscribe">Subscribe</button>
+        <p id="result"></p>
     </form>
 </div>
 
@@ -75,6 +76,7 @@
                 account:account
             },function(result){
                 console.log(result);
+                $("#result").text(result);
             });
         })
     </script>
