@@ -43,6 +43,7 @@ def publish(push=False, remote='origin', branch='master'):
     os.system('git add %s' % os.path.join(basedir,'app/pages/'))
     for page in pages:
         os.system('git add %s' % os.path.join(basedir, page.path))
+    os.system('git add %s' % os.path.join(basedir,'index.html'))
     os.system('git commit -m "publishing articles %s"' % ' '.join(
             [page.path for page in pages]))
     if push or prompt_bool(
